@@ -34,4 +34,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.3'
     compile 'com.beeva.ubiqlibrary:ubiqlibrary:1.0@aar'
     compile 'com.beeva.beevautils:beacons:1.0@aar'
+    compile 'com.jakewharton:butterknife:7.0.1'
+
 }
