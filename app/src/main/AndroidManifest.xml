@@ -9,6 +9,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +17,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name=".UbiqonsBroadcastReceiver"
+            android:enabled="false"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.beeva.ubiqlibrary.NOTIFICATION" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
